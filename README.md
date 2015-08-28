@@ -15,7 +15,7 @@ Create a file named `hosts` in the root and add
 
 Make sure port `5000` is open on the host. You can run `tcpdump -i eth0 port 5000` on the host and curl it from your env to see if its open.
 
-Create a private key without password and save it together with the certificate in `roles/provision/files`.
+Create a private key `domain.key` without password and save it together with the certificate `domain.crt` in `roles/provision/files`.
 
 Create a htpasswd file and store it in the same place. These will be used as your login credentials.
 (cert and htpasswd files are gitignored)
