@@ -1,6 +1,6 @@
 # Docker registry
 
-Deploys a docker registry using the `registry:2` docker image to a `centOS 7` host.
+Deploys a docker registry using the [registry:2](https://github.com/docker/distribution/blob/master/docs/deploying.md) docker image to a `centOS 7` host.
 
 Tested on google cloud stable release of `centOS 7`
 
