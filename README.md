@@ -29,10 +29,6 @@ Create a htpasswd file and store it in the same place. These will be used as you
 
 `ansible-playbook -i hosts deploy.yml -u <user>`
 
-# re-deploy
-
-For now you have to manually stop the container on the host and then deploy again.
-
 # login
 
 You can now login with `docker login <myhost>:5000`
