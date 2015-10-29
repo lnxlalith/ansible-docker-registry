@@ -2,4 +2,8 @@
 
 - hosts: registry
   roles:
+    - role: mount-disk
+      disk_device_path: "/dev/sdb"
+      mount_dir: /data
+      mount_options: "defaults,auto,noatime,noexec"
     - provision

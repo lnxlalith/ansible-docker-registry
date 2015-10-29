@@ -12,6 +12,7 @@ Create a file named `hosts` in the root and add
 <ip or domain name of your server>
 ```
 
+Add a disk to it at /dev/sdb (default on google cloud) (it will be mounted at /data and used for storing images).
 
 Make sure port `5000` is open on the host. You can run `tcpdump -i eth0 port 5000` on the host and curl it from your env to see if its open.
 
