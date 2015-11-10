@@ -10,6 +10,12 @@
 - name: Install docker
   shell: curl -sSL https://get.docker.com/ | sh
 
+- name: Create docker images dir
+  file: path={{docker_images_dir}} state=directory
+
+- name: Config docker to use images dir
+  lineinfile: dest=/etc/default/docker line="DOCKER_OPTS="-g {{docker_images_dir}}"
+
 - name: Start docker
   sudo: true
   service: name=docker state=started
